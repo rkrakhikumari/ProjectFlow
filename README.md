@@ -106,7 +106,7 @@ npm run dev
 To create sample data:
 
 ```bash
-python manage.py loaddata seed.json
+python manage.py seed
 ```
 
 OR create manually:
