@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Base Theme */
+body {
+  @apply bg-[#0a0a0f] text-white;
+}
+
+@utility glass {
+  @apply bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] shadow-[0_8px_30px_rgba(0,0,0,0.6)];
+}
+
+@utility input-premium {
+  @apply w-full p-3 bg-white/10 border border-white/10 rounded-xl text-white outline-none 
+  focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 transition;
+}
+
+@utility input {
+  @apply w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/8 text-white 
+  placeholder-gray-500 outline-none transition-all duration-300
+  focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30;
+}
+
+@utility btn-primary {
+  @apply px-5 py-2.5 rounded-xl bg-linear-to-r from-blue-500 to-indigo-600 
+  text-white font-medium shadow-lg shadow-blue-500/20
+  hover:scale-[1.02] hover:shadow-blue-500/40 transition;
+}
+
+@utility btn-outline {
+  @apply px-5 py-2.5 rounded-xl border border-white/10 text-white 
+  hover:bg-white/10 transition;
+}
+
+@utility dropdown-item {
+  @apply block w-full px-4 py-2 text-left text-sm hover:bg-white/10 transition;
+}
+
+@utility modal {
+  @apply fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50;
+}
+
+@utility modal-box {
+  @apply glass p-6 rounded-2xl w-full max-w-md;
+}
+
+@utility glow {
+  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+}
